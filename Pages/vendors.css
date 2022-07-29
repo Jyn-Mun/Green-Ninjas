@@ -1,0 +1,290 @@
+body {
+    font-family: "Roboto";
+}
+
+.overallVendorsDiv {
+    padding: 30px;
+}
+
+.vendorsDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.googleMapsDiv {
+    width: 50%;
+}
+
+.googleMaps {
+    border: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px 0 0 15px;
+
+}
+
+.eventsBoard {
+    background-color: #669C8B;
+    color: #EDC6BF;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    border-radius: 0 15px 15px 0;
+}
+
+.eventsBoard ul {
+    font-size: 17px;
+}
+
+.eventsBoard li {
+    margin-top: 20px;
+}
+
+.vendorsInfoDiv {
+    margin-top: 30px;
+    background-color: #669C8B;
+    color: #EDC6BF;
+    padding: 30px 30px 10px 30px;
+    border-radius: 20px;
+}
+
+.directionsWrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    color: #EDC6BF;
+    width: max-content;
+    padding: 5px 10px 5px 10px;
+    border: 2px solid transparent;
+}
+
+.directionsWrapper:hover {
+    color: #669C8B;
+    border-radius: 10px;
+    border: 2px solid #669C8B;
+    text-decoration: none;
+    background-color: #cbfed9;
+}
+
+.googleMapsIcon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+.vendorsInfoDiv p {
+    margin-top: 10px;
+}
+
+.vendorsTitle {
+    font-weight: bold;
+    text-shadow: 2px 2px 2px gray;
+}
+
+.vendorsMoreButton {
+    border: 1px solid #EDC6BF;
+    background-color: #669C8B;
+    color: #EDC6BF;
+    border-radius: 5px;
+}
+
+.vendorsMoreButton:hover {
+    border-left: none;
+    border-right: none;
+    border-top: 2px solid #ff8d79;
+    border-bottom: 2px solid #ff8d79;
+    border-radius: 0;
+    letter-spacing: 2px;
+    color: #ff8d79;
+}
+
+.vendorsMoreButton:focus {
+    outline: none;
+}
+
+.vendorsPopUp1 {
+    visibility: hidden;
+    position: fixed;
+    top: 10%;
+    left: 10%;
+    background-color: #669C8B;
+    width: 80vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 20px;
+    border: 2px solid #EDC6BF;
+}
+
+.closePopUp1 {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #669C8B;
+    color: #EDC6BF;
+    border: 2px solid #EDC6BF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.closePopUp1:hover {
+    background-color: #EDC6BF;
+    color: #669C8B;
+}
+
+.vendorsPopUp2 {
+    visibility: hidden;
+    position: fixed;
+    top: 10%;
+    left: 10%;
+    background-color: #669C8B;
+    width: 80vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    border: 2px solid #EDC6BF;
+    flex-direction: column;
+    color: #EDC6BF;
+}
+
+.vendorsPopUp2 h4 {
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.closePopUp2 {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #669C8B;
+    color: #EDC6BF;
+    border: 2px solid #EDC6BF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.closePopUp2:hover {
+    background-color: #EDC6BF;
+    color: #669C8B;
+}
+
+.vendorsPopUp3 {
+    visibility: hidden;
+    position: fixed;
+    top: 10%;
+    left: 10%;
+    background-color: #669C8B;
+    width: 80vw;
+    height: 80vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-size: 20px;
+    border: 2px solid #EDC6BF;
+}
+
+.closePopUp3 {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #669C8B;
+    color: #EDC6BF;
+    border: 2px solid #EDC6BF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.closePopUp3:hover {
+    background-color: #EDC6BF;
+    color: #669C8B;
+}
+
+.popUpCard {
+    background-color: #cbfed9;
+    color: #669C8B;
+    border: 2px solid #669C8B;
+    width: 33%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.popUpCard div {
+    height: 20%;
+}
+
+.popUpCard h4 {
+    text-align: center;
+    text-shadow: 1px 1px 1px gray;
+}
+
+.popUpCard img {
+    width: 80%;
+    height: 50%;
+    object-fit: cover;
+}
+
+.popUpCard a {
+    margin-top: 20px;
+    font-size: 15px;
+    text-align: center;
+}
+
+@media screen and (max-width: 740px) {
+    .popUpText {
+        width: 100%;
+        height: 100%;
+        font-size: 10px;
+    }
+
+    .vendorsPopUp3 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .popUpCard {
+        width: 100%;
+        height: 33%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    .popUpCard img {
+        width: 80%;
+        height: 30%;
+        object-fit: cover;
+    }
+
+    .popUpCard div {
+        height: max-content;
+    }
+}

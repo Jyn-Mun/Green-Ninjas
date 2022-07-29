@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="./blog.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../Pages/blog.js"></script>
+</head>
+
+<script>
+    $(function () {
+        $(".navbarDiv").load("./navbar.html");
+    });
+
+    $(function () {
+        $("#footer-placeholder").load("./footer.html");
+    });
+</script>
+
+<body>
+    <nav class="navbarDiv">
+    </nav>
+    <div class="header">
+        <h1> Welcome to the Blog! </h1>
+    </div>
+    <main>
+        <div class="containers">
+            <div>
+                <img class="blogimage" src="../Images/seeds-of-growth.jpg" alt="Seeds of Growth Image" />
+            </div>
+
+            <div class="card">
+                <h2>How to get started with Fashion Activism</h2>
+                <p> When we’re talking about these massive issues, like the climate crisis or
+                    modern-day slavery, it can feel overwhelming. In a similar vein,
+                    solving these issues can feel insurmountable, and words like “activist” can feel
+                    intimidating. But know that being a fashion activist doesn’t mean
+                    that you alone are taking on all of these issues on your
+                    shoulders to solve them. In fact, it’s quite the opposite. </p>
+            </div>
+
+            <div class="card">
+                <h2>Six ways loss of Arctic ice impacts everyone</h2>
+                <p>Polar ice caps are melting as global warming causes climate change.
+                    We lose Arctic sea ice at a rate of almost 13% per decade, and over
+                    the past 30 years, the oldest and thickest ice in the Arctic has declined
+                    by a stunning 95%. If emissions continue to rise unchecked, the Arctic
+                    could be ice-free in the summer by 2040. But what happens in the Arctic
+                    does not stay in the Arctic. Sea ice loss has far-reaching effects around
+                    the world. <a
+                        href="https://www.worldwildlife.org/pages/six-ways-loss-of-arctic-ice-impacts-everyone">See here
+                        how it can affect you.</a></p>
+            </div>
+            <div class="card">
+                <h2>10 Plastic-Free Sunscreens for Your Low Waste Beach Bag</h2>
+                <p>As we head into the sunny months of summer,
+                    finding a non-greasy, no-white cast sunscreen with at least
+                    30 SPF coverage might be your biggest clean beauty priority
+                    — and rightfully so! But adding a low waste and plastic-free
+                    sunscreen pre-requisite into your checklist might just go a long
+                    way in shielding the planet as well. The beauty industry
+                    produces an estimated 120 billion units of plastic packaging
+                    on an annual basis, most of which are not widely recyclable.
+                    Sustainable alternatives include packaging made of aluminum,
+                    glass and paper are endlessly recyclable. </p>
+            </div>
+
+            <div class="card">
+                <h2>Should we give up flying for the sake of the climate?</h2>
+                <p>Everything we do, from the food we eat, products we buy to the way we travel,
+                    releases greenhouse gases into the atmosphere, and so has an impact on the planet’s
+                    climate. But some activities have a far greater impact than others.
+                    Around 2.4% of global CO2 emissions come from aviation. Together with
+                    other gases and the water vapour trails produced by aircraft, the industry
+                    is responsible for around 5% of global warming. At first glance, that might not seem like
+                    very big contribution. Except, only a very small percentage of the world flies frequently.
+                    Even in richer countries like the UK and the US, around half of people fly in any given year,
+                    and just 12-15% are frequent fliers.</p>
+            </div>
+
+            <div class="card">
+                <h2>How to be a green software engineer</h2>
+                <p> As software engineers, we hate solving the same problem over and over again,
+                    so we build libraries of code and reuse other libraries as much as possible.
+                    This is generally great and very green! But, increasingly, we rely on 3rd party
+                    components that are thousands of times larger than the portions we actually want
+                    to use. As a result, we ship a product that requires ten times or a hundred times
+                    more disk space and memory than if the product was developed completely in-house.
+                    Of course, developing completely in-house could mean you’ll never finish the product
+                    and is not practical, but like everything else in life, there’s
+                    probably a good balance that can be maintained that makes sense for the project. </p>
+            </div>
+
+            <div>
+                <img class="blogimage" src="../Images/renewable-car.jpg" alt="Renewable Car image" />
+            </div>
+
+            <div class="card">
+                <h2>How electric vehicles will shape the future</h2>
+                <p>The electric vehicle landscape is rapidly changing as both technology and interest evolve,
+                    and the coming years will see many more EVs take to the roads, seas, and skies. In the US,
+                    electric vehicles sales have climbed by more than 40 percent a year since 2016. By 2035, the
+                    largest automotive markets will be fully electric—providing both a glimpse of a green future
+                    and significant economic opportunity. Explore our insights to find out</p>
+            </div>
+
+        </div>
+        <div class="overallComments">
+            <div class="commentdiv">
+                <input type="text" id="comment-box" placeholder="Enter comment">
+                <button class="commentPostButton" onclick="myFunction()">Post</button>
+            </div>
+            <div class="commentDiv" id="unordered">
+            </div>
+        </div>
+    </main>

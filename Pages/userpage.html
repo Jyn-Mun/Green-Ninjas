@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Userpage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="https://unpkg.com/@popperjs/core@2">
+    <!--      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+ -->
+    <link rel="stylesheet" href="./userpage.css" />
+
+
+</head>
+
+<script>
+    $(function () {
+        $(".navbarDiv").load("./navbar.html");
+    });
+
+    $(function () {
+        $("#footer-placeholder").load("./footer.html");
+    });
+</script>
+
+<body>
+    <nav class="navbarDiv">
+    </nav>
+    <main>
+        <div class="tophalf">
+
+            <!--  <div class="background">            
+                 <img src="./Images/branch-plant-texture-leaf-flower-frost-34404-pxhere.com.jpg" alt="leavesbackground" width="100%" height=> 
+             </div> -->
+
+            <div class="user ">
+                <img class=profilepic src="../Images/tumblrgirl.jpg" alt="User" padding="auto">
+                <p class="name">Jenny</p>
+                <div class="starcount">
+                    <p> ★ 750</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="bottomhalf">
+            <div class="box rewards">
+                <h2 class="boxtitle">Rewards claimed</h2>
+                <p class="boxtext FREECoffee">FREE Coffee</p>
+            </div>
+            <div class="box">
+                <h2 class="boxtitle">Badges</h2>
+                <div class="badges">
+                    <img src="../Images/badgetimer.png" alt="Timer" class="timer">
+                    <img src="../Images/badgeglass.png" alt="Glass" class="glass">
+                    <img src="../Images/badgerose.png" alt="Rose" class="rose">
+                    <img src="../Images/badgearrow.png" alt="Arrow" class="arrow">
+                </div>
+
+            </div>
+            <div class="box">
+                <h2 class="boxtitle">Latest activity</h2>
+                <div class="activity">
+                    <ul>
+                        <li>Streak achieved: 5 days in a row</li>
+                        <li>Badge unlocked: Green Warrior</li>
+                        <li>You earned 500 points!</li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+    </main>
+
+    <div id="template" style="display: none;">
+        <img src="../Images/QRcode.png" height="150px">
+    </div>
+
+    <footer id="footer-placeholder">
+    </footer>
+    <!--     <script src="    https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.5/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script> -->
+
+
+
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script>
+        // With the above scripts loaded, you can call `tippy()` with a CSS
+        // selector and a `content` prop:
+        tippy('.timer', {
+            content: 'Hourglass Badge: 1 month since you joined Green Ninja!',
+        });
+
+        tippy('.rose', {
+            content: 'Flower Badge: you have recommended Green Ninja to 5 friends.',
+        });
+        tippy('.glass', {
+            content: 'Cup Badge: you have used a reusable cup every day for a week!',
+        });
+
+        tippy('.arrow', {
+            content: 'Streak Badge: you have redeemed 3 codes in a week.',
+        });
+
+        const template = document.getElementById('template');
+
+        tippy('.FREECoffee', {
+            content: template.innerHTML,
+            allowHTML: true,
+        });
+
+    </script>
+</body>
+
+</html>

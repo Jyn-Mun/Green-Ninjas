@@ -1,0 +1,157 @@
+body {
+    margin: 0 auto;
+    background-color: #cbfed9;
+    position: absolute;
+    height: 100%;
+    font-family: "Roboto";
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100vw;
+    height: 50px;
+    background-color: #669C8B;
+    margin-bottom: 30px;
+}
+
+.mobileNav {
+    display: hidden;
+}
+
+.navButton {
+    display: none;
+}
+
+.logo {
+    width: 90px
+}
+
+.mobileLogo {
+    display: none;
+}
+
+.profileLogo {
+    width: 50px;
+}
+
+.rightNav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.leftNav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.nav a {
+    text-decoration: none !important;
+    text-shadow: 1px 1px 2px gray;
+    color: #EDC6BF;
+    font-size: 20px
+}
+
+.nav a:hover {
+    color: #ff8d79;
+}
+
+.rightNav a {
+    margin-left: 10px;
+}
+
+.leftNav a {
+    margin-right: 10px;
+}
+
+.leftNavText {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+@media screen and (max-width: 740px) {
+    .nav {
+        display: none;
+    }
+
+    .mobileNav {
+        width: 100vw;
+        height: 50px;
+        background-color: #669C8B;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-right: 1vw;
+        padding-left: 1vw;
+    }
+
+    .navButton {
+        display: block;
+        background-color: #669C8B;
+        border: 2px solid #EDC6BF;
+        width: 2em;
+        height: 2em;
+        border-radius: 50%;
+        color: #EDC6BF;
+        font-weight: bold;
+    }
+
+    .navButton:hover {
+        color: #ff8d79;
+        border: 2px solid #ff8d79;
+    }
+
+    .navButton:focus {
+        outline: none;
+    }
+
+    .mobileLogo {
+        display: block;
+        width: 90px
+    }
+
+    .modal-content {
+        background-color: #669C8B;
+        padding: 20px;
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .mobileNav a {
+        text-decoration: none;
+        color: #EDC6BF;
+    }
+
+    .mobileNav a:hover {
+        color: #ff8d79;
+    }
+
+    .closeButtonDiv {
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        margin-bottom: 20px;
+    }
+
+    .closeButton {
+        position: fixed;
+        top: 1em;
+        right: 1em;
+        background-color: #669C8B;
+        border: 2px solid #EDC6BF;
+        width: 2em;
+        height: 2em;
+        border-radius: 50%;
+        color: #EDC6BF;
+    }
+}

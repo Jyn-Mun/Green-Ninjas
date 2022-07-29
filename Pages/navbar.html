@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./navbar.css" />
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="rightNav">
+            <img class="logo" src="../images/Logo.png" alt="logo" />
+            <a href="./index.html">Reuse</a>
+            <a href="./GetRewards.html">Rewards</a>
+            <a href="./vendors.html">Vendors</a>
+            <a href="./blog.html">Blog</a>
+        </div>
+        <div class="leftNav">
+            <a class="leftNavText" href="./userpage.html"><img class="profileLogo" src="../Images/Profile Logo.png"
+                    alt="profile" />Profile</a>
+        </div>
+    </nav>
+    <nav class="mobileNav">
+        <img class="mobileLogo" src="../images/Logo.png" alt="logo" />
+        <button class="navButton" data-toggle="modal" data-target="#modal">
+            < </button>
+                <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <button class="closeButton" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <a href="./index.html">Reuse</a>
+                            <a href="./rewards.html">Rewards</a>
+                            <a href="./vendors.html">Vendors</a>
+                            <a href="./blog.html">Blog</a>
+                            <a class="leftNavText" href="./userpage.html">Profile</a>
+                        </div>
+                    </div>
+                </div>
+                </div>
+    </nav>
+</body>
+
+</html>

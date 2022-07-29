@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendors</title>
+    <link rel="stylesheet" href="./vendors.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./vendors.js"></script>
+</head>
+
+<script>
+    $(function () {
+        $(".navbarDiv").load("./navbar.html");
+    });
+
+    $(function () {
+        $("#footer-placeholder").load("./footer.html");
+    });
+</script>
+
+<body>
+    <nav class="navbarDiv">
+    </nav>
+    <div class="overallVendorsDiv">
+        <div class="vendorsDiv">
+            <div class="googleMapsDiv">
+                <iframe class="googleMaps"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2490.3153263897293!2d-0.21443688440648068!3d51.37888242791296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876085d47dd822b%3A0x3025c48acaf5d46c!2sReuse%20and%20Recycling%20Centre%20-%20Visits%20must%20be%20booked%20in%20advance!5e0!3m2!1sen!2suk!4v1658575702732!5m2!1sen!2suk"
+                    allowfullscreen="True" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="eventsBoard">
+                <h3 class="vendorsTitle">Sustainability events near me</h3>
+                <ul>
+                    <li>
+                        <h4>Weekly tree planting:</h4>
+                        <a>0.31 miles</a>
+                        <p>Join us at Finsbury park for out weekly tree planting meet</p>
+                        <button class="vendorsMoreButton" onclick="popUp1()"> find out more</button>
+                    </li>
+                    <li>
+                        <h4>Brixton Green convention:</h4>
+                        <a>5.6 miles</a>
+                        <p> Panellists discuss the latest green technologies including algae plastic replacements and
+                            lithium solar cells.</p>
+                        <button class="vendorsMoreButton" onclick="popUp2()"> find out more</button>
+                    </li>
+                    <li>
+                        <h4>Camden secondhand market:</h4>
+                        <a>2.3 miles</a>
+                        <p>Repurpose your old stuff! Waste not, want not</p>
+                        <button class="vendorsMoreButton" onclick="popUp3()"> find out more</button>
+
+                </ul>
+            </div>
+        </div>
+        <div class="vendorsInfoDiv">
+            <h2 class="vendorsTitle">Reuse and Recycling Centre</h2>
+            <h6>Kimpton Park Way, Sutton SM3 9QH</h6>
+            <a href="https://www.google.co.uk/maps/place/Reuse+and+Recycling+Centre+-+Visits+must+be+booked+in+advance/@51.3788791,-0.2122482,17z/data=!3m1!4b1!4m5!3m4!1s0x4876085d47dd822b:0x3025c48acaf5d46c!8m2!3d51.3788791!4d-0.2122482"
+                class="directionsWrapper" target="_blank"><img class="googleMapsIcon"
+                    src="../Images/Google_Maps_icon_(2015-2020).svg.png" /> get directions</a>
+            <p>Visits to the Household Reuse and Recycling Centre are by appointment only and must be booked in
+                advance, visitors without a valid booking will not be allowed access.</p>
+        </div>
+    </div>
+
+    <footer id="footer-placeholder">
+    </footer>
+
+    <div class="vendorsPopUp1">
+        <button class="closePopUp1" onclick="closePopUp1()">x</button>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Cg90pYnRRYU" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </div>
+    <div class="vendorsPopUp2">
+        <button class="closePopUp2" onclick="closePopUp2()">x</button>
+        <h4>About Us</h4>
+        <div class="popUpText">
+            <p>Brixton Green was set-up to ensure local people were at the forefront of the redevelopment of Somerleyton
+                Road. Brixton Green was set up in 2008 by local residents. You can donate to non-profits in support of
+                your
+                community campaign through various payment methods, including cryptocurrencies. Donations made through
+                cryptocurrencies are likely to be tax-free and have low transaction costs. Cryptocurrency investors can
+                also
+                enjoy zero trading fees by taking advantage of automated trading platform like bitcoin bank to execute
+                the
+                trade. Read all the app details at https://kryptoszene.de/bitcoin-robot/bitcoin-bank/ before purchasing
+                the
+                Bitcoin Bank app.</p>
+            <p>We're thrilled to announce our new corporate partners Learnbonds, who will help us develop our brand
+                awareness and secure a transparent future. Learnbonds is an economy website that provides readers with
+                daily
+                income investing news including stocks, cryptocurrencies and payday loans. Read this handy guide that
+                could
+                help you secure a short-term loan:https://learnbonds.com/uk/payday-loans</p>
+            <p>Join Learnbonds and many others to ensure communities are at the forefront of the redevelopment and its
+                governance.</p>
+        </div>
+    </div>
+    <div class="vendorsPopUp3">
+        <button class="closePopUp3" onclick="closePopUp3()">x</button>
+        <div class="popUpCard">
+            <div>
+                <h4>Camden Thrift Store</h4>
+            </div>
+            <img src="https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=L0DG7-HppfyZHwn_0ABEcQ&cb_client=search.gws-prod.gps&w=408&h=240&yaw=43.780663&pitch=0&thumbfov=100"
+                alt="Camden Thrift Store" />
+            <a>51 Chalk Farm Rd, Chalk Farm, London NW1 8AN</a>
+        </div>
+        <div class="popUpCard">
+            <div>
+                <h4>Camden Passage Islington</h4>
+            </div>
+            <img src="https://lh5.googleusercontent.com/p/AF1QipP-XKoKJOUdwyIsDdMDVRf8uYF3yTFkmLq8j_7M=w408-h306-k-no"
+                alt="Camden Passage Islington" />
+            <a>1 Camden Psge, London N1 8EA</a>
+        </div>
+        <div class="popUpCard">
+            <div>
+                <h4>Triad Camden</h4>
+            </div>
+            <img src="https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=L0DG7-HppfyZHwn_0ABEcQ&cb_client=search.gws-prod.gps&w=408&h=240&yaw=43.780663&pitch=0&thumbfov=100"
+                alt="Triad Camden" />
+            <a>154 Camden High St, London NW1 0NE</a>
+        </div>
+    </div>
+</body>

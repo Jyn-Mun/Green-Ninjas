@@ -1,0 +1,127 @@
+.header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #669C8B;
+    color: #EDC6BF;
+    font-family: "Roboto";
+    text-shadow: 2px 2px 2px darkslategray;
+}
+
+main {
+    font-family: "Roboto";
+    margin-top: 20px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    font-family: "Roboto";
+}
+
+
+.containers {
+    width: 100vw;
+    padding: 5vw;
+    font-family: "Roboto";
+    color: #669C8B;
+    column-gap: 4vw;
+    column-count: 2;
+    margin: 0 auto;
+}
+
+.blogimage {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+
+.card {
+    font-family: "Roboto";
+    width: 42vw;
+    height: auto;
+    border-radius: 20px !important;
+    box-shadow: 2px 2px 5px grey;
+    background-color: #669C8B !important;
+    border: 2px solid #669C8B !important;
+    color: #EDC6BF !important;
+    padding: 20px !important;
+    margin: 0 0 2.5em 0;
+    page-break-inside: avoid;
+    break-inside: avoid;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.commentdiv {
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px grey;
+    background-color: #669C8B !important;
+    border: 2px solid #669C8B !important;
+    color: #EDC6BF !important;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#comment-box {
+    background-color: #669C8B;
+    color: #EDC6BF;
+    border: 2px solid #EDC6BF;
+}
+
+#comment-box::placeholder {
+    color: #EDC6BF;
+}
+
+#comment-box:focus {
+    outline: none;
+}
+
+/* #comment-box,
+#post {
+    border: none;
+    border-radius: 5px;
+}
+
+#post:hover {
+    background-color: #a0f3d9;
+} */
+
+.overallComments {
+    padding: 5vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.commentPostButton {
+    border: 1px solid #EDC6BF;
+    background-color: #669C8B;
+    color: #EDC6BF;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.commentPostButton:hover {
+    background-color: #EDC6BF;
+    color: #669C8B;
+}
+
+.commentPostButton:focus {
+    outline: none;
+}
+
+.commentDiv {
+    color: #EDC6BF;
+    display: flex;
+}

@@ -1,0 +1,132 @@
+main {
+    margin-bottom: 50px;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.carouselDiv {
+    width: 80vw;
+    height: 50vw;
+}
+
+.carousel-inner {
+    border-radius: 15px;
+}
+
+.carouselImage {
+    width: 80vw;
+    height: 50vw;
+    box-shadow: 2px 2px 5px grey;
+}
+
+.textDiv {
+    width: 80vw;
+    color: #669C8B;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.newsletterDiv {
+    width: 60vw;
+    padding: 40px 20px 40px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #C8EBD1;
+    border-radius: 20px;
+    box-shadow: 0 0 0 0.5px #669C8B;
+}
+
+form {
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.emailLabel {
+    color: #47695E;
+    margin: 0 auto;
+    margin-right: 10px;
+}
+
+#email {
+    width: 300px;
+    color: #47695E;
+    border: 1px solid #669C8B;
+    padding: 5px;
+}
+
+#email::placeholder {
+    color: #EDC6BF
+}
+
+.newsletterSubmitButton {
+    color: #EDC6BF;
+    background-color: #47695E;
+    border: none;
+    border-radius: 50px;
+    height: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: 1px 1px 5px gray;
+    margin-left: 10px;
+}
+
+.newsletterTopPhrase {
+    margin: -20px;
+    color: #669C8B;
+    text-shadow: 1px 1px 1px darkslategray;
+}
+
+.newsletterBottomPhrase {
+    text-align: end;
+    margin: -20px;
+    color: #669C8B;
+    text-shadow: 1px 1px 1px darkslategray;
+}
+
+@media screen and (max-width: 740px) {
+    .carouselDiv {
+        width: 90vw;
+    }
+
+    .carouselImage {
+        width: 90vw;
+    }
+
+    .newsletterDiv {
+        width: 400px;
+        display: flex;
+    }
+
+    form {
+        display: flex;
+        flex-direction: row;
+        justify-content: center !important;
+        align-items: center !important;
+        width: 100%;
+    }
+
+    .emailLabel {
+        font-size: 10px;
+        margin: 0 auto;
+        margin-right: 0.5em;
+    }
+
+    #email {
+        font-size: 10px;
+        width: 100%;
+        height: 25px;
+    }
+
+    .newsletterSubmitButton {
+        font-size: 10px;
+        height: 25px;
+        margin-left: 0.5em;
+    }
+
+}
